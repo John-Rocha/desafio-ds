@@ -31,15 +31,35 @@ public class Block {
         this.activity = activity;
     }
 
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
+    public Integer getId() {
+        return id;
+    }
 
-    public Instant getStart() { return start; }
-    public void setStart(Instant start) { this.start = start; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    public Instant getEnd() { return end; }
-    public void setEnd(Instant end) { this.end = end; }
+    public Instant getStart() {
+        return start;
+    }
 
-    public Activity getActivity() { return activity; }
-    public void setActivity(Activity activity) { this.activity = activity; }
+    public void setStart(Instant start) {
+        this.start = start;
+    }
+
+    public Instant getEnd() {
+        return end;
+    }
+
+    public void setEnd(Instant end) {
+        this.end = end;
+    }
+
+    public Activity getActivity() {
+        return activity;
+    }
+
+    public void setActivity(Activity activity) {
+        this.activity = activity;
+    }
 }

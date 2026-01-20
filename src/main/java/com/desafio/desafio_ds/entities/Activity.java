@@ -27,9 +27,7 @@ public class Activity {
     private List<Block> blocks = new ArrayList<>();
 
     @ManyToMany
-    @JoinTable(name = "tb_activity_participant",
-            joinColumns = @JoinColumn(name = "activity_id"),
-            inverseJoinColumns = @JoinColumn(name = "participant_id"))
+    @JoinTable(name = "tb_activity_participant", joinColumns = @JoinColumn(name = "activity_id"), inverseJoinColumns = @JoinColumn(name = "participant_id"))
     private Set<Participant> participants = new HashSet<>();
 
     public Activity() {
@@ -43,22 +41,51 @@ public class Activity {
         this.category = category;
     }
 
-    public Integer getId() { return id; }
-    public void setId(Integer id) { this.id = id; }
+    public Integer getId() {
+        return id;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public String getName() {
+        return name;
+    }
 
-    public Double getPrice() { return price; }
-    public void setPrice(Double price) { this.price = price; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public Category getCategory() { return category; }
-    public void setCategory(Category category) { this.category = category; }
+    public String getDescription() {
+        return description;
+    }
 
-    public List<Block> getBlocks() { return blocks; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    public Set<Participant> getParticipants() { return participants; }
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public List<Block> getBlocks() {
+        return blocks;
+    }
+
+    public Set<Participant> getParticipants() {
+        return participants;
+    }
 }
