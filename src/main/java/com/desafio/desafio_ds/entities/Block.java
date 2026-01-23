@@ -11,10 +11,10 @@ public class Block {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    @Column(name = "start_moment", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant start;
 
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    @Column(name = "end_moment", columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant end;
 
     @ManyToOne
